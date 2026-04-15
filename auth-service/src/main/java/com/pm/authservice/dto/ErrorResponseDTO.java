@@ -8,13 +8,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ErrorResponseDto<T> {
+public class ErrorResponseDTO<T> {
    private int status;
    private String message;
    private LocalDateTime timestamp;

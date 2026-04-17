@@ -31,7 +31,9 @@ public class JwtService {
         byte[] keyBytes = Decoders.BASE64.decode(secret);
         this.signingKey = Keys.hmacShaKeyFor(keyBytes);
     }
-
+    String printHi(){
+        return "hi";
+    }
 
     public String generateAccessToken(User user){
         Instant now = Instant.now();
